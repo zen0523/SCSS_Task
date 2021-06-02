@@ -1,0 +1,503 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.html_page {
+  display: block;
+  max-width: 1920px;
+  background-color: #fff;
+  margin: 200px auto 200px auto;
+}
+
+.menu-container {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+img.logo {
+  width: 128px;
+  height: 38px;
+  margin: auto 0;
+}
+
+ul.menu_items {
+  display: flex;
+  justify-content: center;
+}
+
+.menu_item {
+  margin: 16px;
+}
+
+.menu_item,
+.menu_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans TC";
+  font-size: 20px;
+  color: #8D8D8D;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  display: block;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-end;
+  font-family: "Noto Sans TC";
+  font-size: 20px;
+  color: #8D8D8D;
+  height: 870px;
+  background-image: url(../images/index1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.banner_contain {
+  margin-top: 295px;
+  margin-right: 405px;
+  max-width: 445px;
+}
+
+.title {
+  height: 60px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.content {
+  line-height: 36px;
+  width: 95%;
+  font-size: 24px;
+}
+
+.btn {
+  margin-top: 16px;
+  width: 350px;
+  height: 60px;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  font-size: 32px;
+  text-align: center;
+  line-height: 60px;
+  line-height: 50px;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+}
+
+ul.items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1130px;
+  font-family: "Noto Sans TC";
+  font-size: 32px;
+  color: #000000;
+}
+
+.item {
+  width: 565px;
+  height: 555px;
+  overflow: hidden;
+}
+
+.item.special {
+  height: 1080px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 110px 110px 0px 110px;
+}
+
+.text.spe {
+  padding-top: 92px;
+}
+
+.text.spe2 {
+  padding-top: 52px;
+}
+
+.text .title {
+  width: 350px;
+  font-family: "Noto Sans TC";
+  font-size: 32px;
+  color: #000000;
+  line-height: 48px;
+}
+
+.text .title.fix {
+  margin-bottom: 48px;
+}
+
+.text .title.spe {
+  margin-bottom: 48px;
+  line-height: 36px;
+  font-size: 24px;
+}
+
+.text .content {
+  width: 350px;
+  font-family: "Noto Sans TC";
+  font-size: 20px;
+  color: #000000;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.text .content.spe {
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.more {
+  margin-top: 16px;
+  width: 350px;
+  font-family: "Noto Sans TC";
+  font-size: 16px;
+  color: #AC8A46;
+}
+
+.adjust {
+  background-image: url(../images/index3.png);
+  height: 555px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image1 {
+  background-image: url(../images/index4.jpg);
+  height: 555px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image2 {
+  background-image: url(../images/index5.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.btn_spe {
+  margin: 60px auto 0px auto;
+  width: 350px;
+  height: 60px;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  line-height: 50px;
+}
+
+.promote {
+  margin-top: 60px;
+  max-width: 1920px;
+  height: 728px;
+  display: flex;
+  justify-content: center;
+  background-color: #E0E0E0;
+}
+
+.promote .products {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.promote .products .product {
+  margin: 0 15px;
+  width: 350px;
+}
+
+.promote .products .product .img {
+  height: 540px;
+  width: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promote .products .product .img.product_img1 {
+  background-image: url(../images/index6.jpg);
+}
+
+.promote .products .product .img.product_img2 {
+  background-image: url(../images/index7.jpg);
+}
+
+.promote .products .product .img.product_img3 {
+  background-image: url(../images/index8.jpg);
+}
+
+.promote .products .product .img.product_img3::before {
+  content: 'Sold out';
+  display: block;
+  height: 540px;
+  width: 350px;
+  background: rgba(0, 0, 0, 0.3);
+  font-family: "Noto Sans TC";
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height: 540px;
+  line-height: 540px;
+}
+
+.promote .products .product .discount {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+}
+
+.promote .products .product .product_name,
+.promote .products .product .product_brand,
+.promote .products .product .price {
+  font-family: "Noto Sans TC";
+  font-size: 24px;
+  color: #000000;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.promote .products .product .product_brand,
+.promote .products .product .price {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.promote .products .product .price {
+  margin-top: 16px;
+}
+
+.promote .products .product .price.disabled {
+  margin-left: 8px;
+  text-decoration: line-through;
+  color: #8D8D8D;
+}
+
+.new {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.new .img {
+  height: 520px;
+  width: 730px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.new .img.product_new {
+  background-image: url(../images/index9.jpg);
+}
+
+.new .text {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.new .text .p2 {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.subscribe {
+  height: 600px;
+  max-width: 1920px;
+  margin-top: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/index10.jpg);
+  background-position: center center;
+}
+
+.subscribe .slogan {
+  font-family: "Noto Sans TC";
+  font-size: 32px;
+  color: #8D8D8D;
+  line-height: 48px;
+  padding: 312px 1165px 0px 405px;
+}
+
+.subscribe .input_block {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  width: 350px;
+  height: 60px;
+  margin-left: 405px;
+  margin-top: 20px;
+}
+
+.subscribe .input_block a {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.subscribe .input_block .input {
+  border-radius: 4px 0px 0px 4px;
+  border: 2px solid #916000;
+  width: 219px;
+  color: #8D8D8D;
+  background-color: #fff;
+  padding-left: 16px;
+  line-height: 54px;
+}
+
+.subscribe .input_block .button {
+  width: 131px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #916000;
+  color: #FFFFFF;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  max-width: 1920px;
+  height: 80px;
+  background-color: #905f0b;
+  font-family: "Noto Sans TC";
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.footer .footer_block {
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer_block .logo_block {
+  display: flex;
+  justify-content: center;
+  line-height: 84px;
+}
+
+.footer .footer_block .logo_block .logo {
+  margin: auto;
+  width: 128px;
+  height: 38px;
+  background-image: url(../images/d’Perfumewhite.png);
+}
+
+.footer .footer_block .logo_block .copyright {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.footer .footer_block .menu_block {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer_block .menu_block .footer_item {
+  font-size: 20px;
+  padding: 18px;
+  line-height: 46px;
+}
+
+.footer .footer_block .menu_block .footer_item:hover {
+  cursor: pointer;
+}
