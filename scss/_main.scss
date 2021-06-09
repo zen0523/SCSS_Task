@@ -21,109 +21,24 @@ body {
     background-color: #fafafa;
 }
 
-.html_page {
-    display: block;
-    max-width: 1920px;
-    background-color: #fff;
-    margin: 200px auto 200px auto;
-}
-
-.menu-container {
-    max-width: 1110px;
-    margin: 0 auto;
-
-    @include flex_center {
-        justify-content: space-between;
-    }
-
-    ;
-    padding-top: 9px;
-    padding-bottom: 9px;
-}
-
-img.logo {
-    width: 128px;
-    height: 38px;
-    margin: auto 0;
-}
-
-ul.menu_items {
-    @include flex_center;
-}
-
-.menu_item {
-    margin: 16px;
-}
-
-.menu_item,
-.menu_link {
-    @include flex_center {
-        align-items: center;
-    }
-
-    ;
-    @include font("Noto Sans TC", 20px, #8D8D8D);
-}
-
-.icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 6px;
-    display: block;
-}
-
-.banner {
-    @include flex_center {
-        justify-content: flex-end;
-        // flex-direction: column;
-    }
-
-    ;
-    @include font("Noto Sans TC", 20px, #8D8D8D);
-    // width: 100%;
-    height: 870px;
-    background-image: url(../images/index1.jpg);
-    background-repeat: no-repeat;
-    // background-attachment: fixed;
-    background-size: cover;
-    color: #FFFFFF;
-    margin-bottom: 60px;
-}
-
-.banner_contain {
-    margin-top: 295px;
-    margin-right: 405px;
-    max-width: 445px;
-}
-
-.title {
-    height: 60px;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: left;
-}
-
-.content {
-    line-height: 36px;
-    width: 95%;
-    font-size: 24px;
-}
-
-.btn {
-    margin-top: 16px;
-    width: 350px;
-    height: 60px;
-    border: 2px solid #FFFFFF;
-    border-radius: 30px;
-    font-size: 32px;
-
-    @include text_center(60px) {
-        line-height: 50px;
-    }
+.container-fluid {
+    padding: 0;
+    height:70vh;
 }
 
 .introduction {
     @include flex_center;
+}
+
+.img-left {
+    width: 1110px;
+    height: 555px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        object-fit: contain;
+        overflow: hidden;
+    }
 }
 
 ul.items {
@@ -161,7 +76,7 @@ ul.items {
     }
 }
 
-.text .title {
+.title {
     width: 350px;
     @include font("Noto Sans TC", 32px, #000000);
     line-height: 48px;
@@ -414,24 +329,28 @@ ul.items {
         .logo_block {
             @include flex_center;
             line-height: 84px;
+
             .logo {
                 margin: auto;
                 width: 128px;
                 height: 38px;
                 background-image: url(../images/d’Perfumewhite.png);
             }
+
             .copyright {
                 margin-left: 20px;
                 font-size: 14px;
             }
         }
 
-        .menu_block{
+        .menu_block {
             @include flex_center;
-            .footer_item{
+
+            .footer_item {
                 font-size: 20px;
                 padding: 18px;
                 line-height: 46px;
+
                 &:hover {
                     cursor: pointer;
                 }
