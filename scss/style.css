@@ -10243,157 +10243,149 @@ body {
   background-color: #fafafa;
 }
 
+.menu.container .navbar-custom {
+  display: flex;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl,
-.container-xxl {
+.menu.container .navbar-custom img {
+  width: 128px;
+  height: 38px;
+}
+
+.menu.container .navbar-custom .menu-items {
+  display: flex;
   padding: 0;
-  height: 70vh;
+  list-style: none;
 }
 
-.introduction {
-  display: flex;
-  justify-content: center;
+@media (max-width: 568px) {
+  .menu.container .navbar-custom .menu-items {
+    display: none;
+  }
 }
 
-.img-left {
-  width: 1110px;
-  height: 555px;
-  overflow: hidden;
+.menu.container .navbar-custom .menu-items .item {
+  line-height: 38px;
 }
 
-.img-left img {
+.banner.container-fluid, .banner.container-sm, .banner.container-md, .banner.container-lg, .banner.container-xl, .banner.container-xxl {
   width: 100%;
-  object-fit: contain;
-  overflow: hidden;
+  height: 90vh;
+  padding: 0px 0px 60px 0px;
 }
 
-ul.items {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1130px;
-  font-family: "Noto Sans TC";
+.banner.container-fluid .banner-img, .banner.container-sm .banner-img, .banner.container-md .banner-img, .banner.container-lg .banner-img, .banner.container-xl .banner-img, .banner.container-xxl .banner-img {
+  height: 100%;
+  background-size: 110%;
+  background-image: url(../images/index1.jpg);
+  background-repeat: no-repeat;
+}
+
+.banner.container-fluid .banner-img .discriptions, .banner.container-sm .banner-img .discriptions, .banner.container-md .banner-img .discriptions, .banner.container-lg .banner-img .discriptions, .banner.container-xl .banner-img .discriptions, .banner.container-xxl .banner-img .discriptions {
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.banner.container-fluid .banner-img .discriptions .discriptions-content, .banner.container-sm .banner-img .discriptions .discriptions-content, .banner.container-md .banner-img .discriptions .discriptions-content, .banner.container-lg .banner-img .discriptions .discriptions-content, .banner.container-xl .banner-img .discriptions .discriptions-content, .banner.container-xxl .banner-img .discriptions .discriptions-content {
+  width: 35%;
+}
+
+.banner.container-fluid .banner-img .discriptions .discriptions-content .btn, .banner.container-sm .banner-img .discriptions .discriptions-content .btn, .banner.container-md .banner-img .discriptions .discriptions-content .btn, .banner.container-lg .banner-img .discriptions .discriptions-content .btn, .banner.container-xl .banner-img .discriptions .discriptions-content .btn, .banner.container-xxl .banner-img .discriptions .discriptions-content .btn {
   font-size: 32px;
-  color: #000000;
+  width: 80%;
+  border: 2px solid #FFFFFF;
 }
 
-.item {
-  width: 565px;
+.introduction.container {
+  display: flex;
+  padding: 0;
+  width: 1110px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.introduction.container .introduction-content {
+  width: 555px;
   height: 555px;
+  padding: 0;
   overflow: hidden;
+  vertical-align: middle;
 }
 
-.item.special {
-  height: 1080px;
+.introduction.container .introduction-content img {
+  width: 100%;
 }
 
-.text {
+.introduction.container .introduction-content .introduction-body {
+  width: 350px;
+  padding: 0;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 110px 110px 0px 110px;
 }
 
-.text.spe {
-  padding-top: 92px;
-}
-
-.text.spe2 {
-  padding-top: 52px;
-}
-
-.title {
-  width: 350px;
-  font-family: "Noto Sans TC";
+.introduction.container .introduction-content .introduction-body .introduction-title {
   font-size: 32px;
-  color: #000000;
-  line-height: 48px;
+  font-weight: bolder;
 }
 
-.title.fix {
-  margin-bottom: 48px;
-}
-
-.title.spe {
-  margin-bottom: 48px;
-  line-height: 36px;
-  font-size: 24px;
-}
-
-.text .content {
-  width: 350px;
-  font-family: "Noto Sans TC";
+.introduction.container .introduction-content .introduction-body .introduction-text {
   font-size: 20px;
-  color: #000000;
-  line-height: 30px;
-  font-weight: 300;
 }
 
-.text .content.spe {
-  font-weight: 300;
-  line-height: 24px;
-  font-size: 16px;
-}
-
-.more {
-  margin-top: 16px;
-  width: 350px;
-  font-family: "Noto Sans TC";
+.introduction.container .introduction-content .introduction-body .introduction-more {
   font-size: 16px;
   color: #AC8A46;
 }
 
-.adjust {
-  background-image: url(../images/index3.png);
-  height: 555px;
-  background-repeat: no-repeat;
-  background-size: cover;
+.introduction.container .introduction-content.h1080 {
+  height: 1080px;
 }
 
-.image1 {
-  background-image: url(../images/index4.jpg);
-  height: 555px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.image2 {
-  background-image: url(../images/index5.jpg);
+.introduction.container .introduction-content.h1080 img {
+  width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  object-fit: cover;
 }
 
-.btn_spe {
-  margin: 60px auto 0px auto;
-  width: 350px;
+.introduction.container .introduction-content.h1080 .introduction-title {
+  font-size: 24px;
+}
+
+.introduction.container .introduction-content.h1080 .introduction-text {
+  font-size: 16px;
+  margin-bottom: 52px;
+}
+
+.introduction.container .introduction-content.h1080 .btn {
+  font-size: 20px;
+  width: 100%;
   height: 60px;
   border: 2px solid #000000;
-  border-radius: 30px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 60px;
-  line-height: 50px;
 }
 
 .promote {
-  margin-top: 60px;
-  max-width: 1920px;
+  width: 100%;
   height: 728px;
   display: flex;
   justify-content: center;
   background-color: #E0E0E0;
+  padding: 0;
+  margin: 0px 0px 60px 0px;
 }
 
 .promote .products {
   margin-top: 40px;
+  padding: 0;
+  list-style: none;
   display: flex;
   justify-content: center;
+  justify-content: space-around;
 }
 
 .promote .products .product {
@@ -10468,27 +10460,31 @@ ul.items {
 }
 
 .new {
+  padding: 0px;
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin: 0px 0px 60px 0px;
 }
 
-.new .img {
+.new img {
   height: 520px;
   width: 730px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.new .img.product_new {
-  background-image: url(../images/index9.jpg);
 }
 
 .new .text {
-  padding: 30px;
+  width: 350px;
+  margin-left: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.new .text .title {
+  font-weight: bold;
+}
+
+.new .text .content {
+  font-size: 20px;
 }
 
 .new .text .p2 {
@@ -10498,22 +10494,28 @@ ul.items {
   font-weight: 300;
 }
 
+.new .text .introduction-more {
+  color: #AC8A46;
+}
+
 .subscribe {
   height: 600px;
-  max-width: 1920px;
-  margin-top: 60px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../images/index10.jpg);
   background-position: center center;
 }
 
+.subscribe .subscribe-content {
+  padding-top: 302px;
+  width: 1110px;
+}
+
 .subscribe .slogan {
   font-family: "Noto Sans TC";
   font-size: 32px;
   color: #8D8D8D;
-  line-height: 48px;
-  padding: 312px 1165px 0px 405px;
+  margin-bottom: 20px;
 }
 
 .subscribe .input_block {
@@ -10522,8 +10524,6 @@ ul.items {
   border-radius: 4px;
   width: 350px;
   height: 60px;
-  margin-left: 405px;
-  margin-top: 20px;
 }
 
 .subscribe .input_block a {
@@ -10548,6 +10548,7 @@ ul.items {
   text-align: center;
   line-height: 60px;
   background-color: #916000;
+  border: 2px solid #916000;
   color: #FFFFFF;
   border-radius: 0px 4px 4px 0px;
 }
@@ -10590,6 +10591,7 @@ ul.items {
 .footer .footer_block .menu_block {
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 
 .footer .footer_block .menu_block .footer_item {
