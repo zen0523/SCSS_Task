@@ -128,11 +128,13 @@ body {
 
         &.h1080 {
             height: 1080px;
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
+
             .introduction-title {
                 font-size: 24px;
             }
@@ -164,9 +166,10 @@ body {
         margin-top: 40px;
         padding: 0;
         list-style: none;
+
         @include flex_center {
             justify-content: space-around;
-        };
+        }
 
         .product {
             margin: 0 15px;
@@ -261,15 +264,18 @@ body {
         .title {
             font-weight: bold;
         }
+
         .content {
             font-size: 20px;
         }
+
         .p2 {
             margin-top: 16px;
             font-size: 16px;
             line-height: 24px;
             font-weight: 300;
         }
+
         .introduction-more {
             color: #AC8A46;
         }
@@ -290,8 +296,7 @@ body {
     }
 
     .slogan {
-        @include font("Noto Sans TC", 32px, #8D8D8D) {
-        }
+        @include font("Noto Sans TC", 32px, #8D8D8D);
         margin-bottom: 20px;
     }
 
@@ -370,6 +375,105 @@ body {
                 &:hover {
                     cursor: pointer;
                 }
+            }
+        }
+    }
+}
+
+.submenu {
+    background-color: #905f0b;
+    font-size: 20px;
+    width: 100%;
+    height: 52px;
+    @include flex_center;
+    margin: 0px 0px 80px 0px;
+
+    .menu-items {
+        display: flex;
+        list-style: none;
+
+        .item a {
+            color: white;
+            line-height: 52px;
+        }
+    }
+}
+
+.sell_product {
+    width: 100%;
+    @include flex_center;
+    padding: 0;
+    margin: 0px 0px 60px 0px;
+    flex-direction: column;
+
+    .products {
+        padding: 0;
+        list-style: none;
+        width: 1110px;
+        flex-wrap: wrap;
+
+        @include flex_center {
+            justify-content: space-around;
+        }
+
+        .product {
+            margin: 0;
+            width: 255px;
+            margin-bottom: 60px;
+
+            img {
+                width: 100%;
+                height: 255px;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+
+            .product_name {
+                @include font("Noto Sans TC", 24px, #000000);
+                line-height: 36px;
+                font-weight: 600;
+                height: 36px;
+            }
+
+            .product_brand,
+            .price {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                height: 24px;
+            }
+
+            .price {
+                .disabled {
+                    margin-left: 8px;
+                    text-decoration: line-through;
+                    color: #8D8D8D;
+                }
+            }
+
+            .icon_group {
+                font-size: 20px;
+                color: #916019;
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .pages {
+        flex-direction: row;
+        list-style: none;
+        @include flex_center;
+        @include font("Noto Sans TC", 20px, #000000);
+
+        .page {
+            margin: 0 10px;
+
+            &.selected {
+                color: #916019;
+                text-decoration: underline;
             }
         }
     }

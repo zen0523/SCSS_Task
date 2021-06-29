@@ -10605,3 +10605,106 @@ body {
 .footer .footer_block .menu_block .footer_item:hover {
   cursor: pointer;
 }
+
+.submenu {
+  background-color: #905f0b;
+  font-size: 20px;
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 80px 0px;
+}
+
+.submenu .menu-items {
+  display: flex;
+  list-style: none;
+}
+
+.submenu .menu-items .item a {
+  color: white;
+  line-height: 52px;
+}
+
+.sell_product {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0px 0px 60px 0px;
+  flex-direction: column;
+}
+
+.sell_product .products {
+  padding: 0;
+  list-style: none;
+  width: 1110px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.sell_product .products .product {
+  margin: 0;
+  width: 255px;
+  margin-bottom: 60px;
+}
+
+.sell_product .products .product img {
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.sell_product .products .product .product_name {
+  font-family: "Noto Sans TC";
+  font-size: 24px;
+  color: #000000;
+  line-height: 36px;
+  font-weight: 600;
+  height: 36px;
+}
+
+.sell_product .products .product .product_brand,
+.sell_product .products .product .price {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  height: 24px;
+}
+
+.sell_product .products .product .price .disabled {
+  margin-left: 8px;
+  text-decoration: line-through;
+  color: #8D8D8D;
+}
+
+.sell_product .products .product .icon_group {
+  font-size: 20px;
+  color: #916019;
+}
+
+.sell_product .products .product .icon_group i {
+  margin-right: 10px;
+}
+
+.sell_product .pages {
+  flex-direction: row;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Sans TC";
+  font-size: 20px;
+  color: #000000;
+}
+
+.sell_product .pages .page {
+  margin: 0 10px;
+}
+
+.sell_product .pages .page.selected {
+  color: #916019;
+  text-decoration: underline;
+}
